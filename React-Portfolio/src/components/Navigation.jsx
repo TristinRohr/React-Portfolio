@@ -8,7 +8,7 @@ function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
       <div className="container">
-        <Link className="navbar-brand" to="/">React Portfolio</Link>
+        <Link className="navbar-brand" to="/">Portfolio</Link>
 
         <div>
           <ul className="navbar-nav">
@@ -20,6 +20,9 @@ function Navigation() {
             </li>
             <li className="nav-item">
               <Link to="/contact" className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/resume" className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}>Resume</Link>
             </li>
           </ul>
         </div>

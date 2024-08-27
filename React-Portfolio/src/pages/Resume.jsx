@@ -3,7 +3,7 @@
 
 const Resume = () => {
   return (
-    <section>
+    <section className='resume'>
       <h2>Resume</h2>
       <p><a href="React-Portfolio/src/assets/Resume 2024.pdf" download>Download My Resume</a></p>
       
@@ -15,7 +15,7 @@ const Resume = () => {
       </p>
 
       <h3>Experience</h3>
-      <ul>
+      <ul className= "experience">
         <li><strong>Solar Consultant</strong> - Top Tier Solar Solutions, Garner, NC (May 2023 - 2024)
           <ul>
             <li>Lead generation and qualified leads for interested homeowners, boosting client acquisition.</li>

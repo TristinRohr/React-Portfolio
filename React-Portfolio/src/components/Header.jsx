@@ -4,7 +4,7 @@ import Navigation from './Navigation';
 
 const Header = () => {
   return (
-    <header>
+    <header className='header'>
       <h1>Tristin Rohr</h1>
       <Navigation />
     </header>
