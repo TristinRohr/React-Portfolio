@@ -5,7 +5,7 @@ const Resume = () => {
   return (
     <section className='resume'>
       <h2>Resume</h2>
-      <p><a href="React-Portfolio/src/assets/Resume 2024.pdf" download>Download My Resume</a></p>
+      <p><a href="React-Portfolio/src/assets/Resume2024.pdf" download>Download My Resume</a></p>
       
       <h3>Profile</h3>
       <p>
