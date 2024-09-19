@@ -20,10 +20,10 @@ const Portfolio = () => {
         repoLink="https://github.com/ndzamboni/Potty_Partner"
       />
       <Project
-        title="Live LOL Tracker"
-        image="/LLT-logo.jpeg"
-        deployedLink=""
-        repoLink="https://github.com/TristinRohr/Live-LOL-Tracker"
+        title="Nexus Insight"
+        image="/nexusinsight.png"
+        deployedLink="https://nexusinsight.onrender.com/"
+        repoLink="https://github.com/TristinRohr/NexusInsight"
       />
       <Project
         title= "Task Manager"
