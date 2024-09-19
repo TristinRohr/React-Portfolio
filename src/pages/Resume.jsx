@@ -5,14 +5,20 @@ const Resume = () => {
   return (
     <section className='resume'>
       <h2>Resume</h2>
-      <p><a href="/Resume2024.pdf" download>Download My Resume</a></p>
+      <p><a href="/WebDevResume.pdf" download>Download My Resume</a></p>
       
       <h3>Profile</h3>
       <p>
-        Aspiring Full-Stack Web Developer with a passion for creating dynamic and responsive web applications. 
-        Currently enrolled in a comprehensive Full-Stack Web Development Bootcamp to hone my skills in front-end 
-        and back-end technologies. Eager to apply my knowledge and contribute to a dynamic development team.
+      Full Stack Web Developer with expertise in building dynamic and responsive web applications. Recently graduated from an intensive Full-Stack Web Development Bootcamp, gaining hands-on experience in both front-end and back-end technologies. Adept at creating user-friendly interfaces and scalable solutions with a keen eye for detail and problem solving. Proven ability to collaborate effectively within teams to deliver high-quality projects on time. Continuously driven to learn and apply new technologies to enhance development efficiency and user experience.
       </p>
+
+      <h3>Skills</h3>
+      <ul>
+        <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript (ES6+), React, Redux, Responsive Design, Bootstrap</li>
+        <li><strong>Back-End:</strong> Node.js, Express.js, RESTful APIs, MongoDB, SQL</li>
+        <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code, Postman</li>
+        <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Time Management</li>
+      </ul>
 
       <h3>Experience</h3>
       <ul className= "experience">
@@ -41,16 +47,9 @@ const Resume = () => {
 
       <h3>Education</h3>
       <ul>
-        <li><strong>Full-Stack Web Development Bootcamp</strong> - The Coding Boot Camp at UNC-Chapel Hill (Expected: Sept 2024)</li>
-        <li><strong>GED</strong> - Sandhills Community College (Completed: Aug 2013)</li>
-      </ul>
-
-      <h3>Skills</h3>
-      <ul>
-        <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript (ES6+), React, Redux, Responsive Design, Bootstrap</li>
-        <li><strong>Back-End:</strong> Node.js, Express.js, RESTful APIs, MongoDB, SQL</li>
-        <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code, Postman</li>
-        <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Time Management</li>
+        <li><strong>Full-Stack Web Development Certificate</strong> - UNC-Chapel Hill</li>
+        <li><strong>Team Leadership Certificate</strong> - Sandhills Community College</li>
+        <li><strong>GED</strong> - Sandhills Community College</li>
       </ul>
     </section>
   );
