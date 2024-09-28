@@ -1,28 +1,82 @@
-// src/components/Navigation.js
-// import React from 'react';
+import { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
+import './Navigation.css';
 
 function Navigation() {
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [darkMode, setDarkMode] = useState(() => localStorage.getItem('theme') === 'dark');
   const currentPage = useLocation().pathname;
 
-  return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <div className="container">
-        <Link className="navbar-brand" to="/">Portfolio</Link>
+  const toggleDropdown = () => {
+    setDropdownOpen(!dropdownOpen);
+  };
 
-        <div>
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/aboutme" className={currentPage === '/' ? 'nav-link active' : 'nav-link'}>About</Link>
+  const closeDropdown = () => {
+    setDropdownOpen(false);
+  };
+
+  // Dark mode toggle function
+  const toggleDarkMode = () => {
+    const newTheme = darkMode ? 'light' : 'dark';
+    setDarkMode(!darkMode);
+    document.documentElement.setAttribute('data-theme', newTheme);
+    localStorage.setItem('theme', newTheme);
+  };
+
+  // Apply theme from localStorage on initial load
+  useEffect(() => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    document.documentElement.setAttribute('data-theme', savedTheme);
+    setDarkMode(savedTheme === 'dark');
+  }, []);
+
+  return (
+    <nav className="navbar">
+      <div className="container">
+        {/* Dark Mode Toggle Button */}
+        <button onClick={toggleDarkMode} className="dark-mode-toggle">
+          {darkMode ? '🌙' : '☀️ '}
+        </button>
+        <div className="dropdown">
+          <button onClick={toggleDropdown} className="dropdown-button">
+            Menu
+          </button>
+          <ul className={`dropdown-menu ${dropdownOpen ? 'show' : ''}`}>
+            <li>
+              <Link 
+                to="/aboutme" 
+                className={currentPage === '/aboutme' ? 'dropdown-item active' : 'dropdown-item'} 
+                onClick={closeDropdown}
+              >
+                About
+              </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/portfolio" className={currentPage === '/portfolio' ? 'nav-link active' : 'nav-link'}>Portfolio</Link>
+            <li>
+              <Link 
+                to="/portfolio" 
+                className={currentPage === '/portfolio' ? 'dropdown-item active' : 'dropdown-item'} 
+                onClick={closeDropdown}
+              >
+                Portfolio
+              </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/contact" className={currentPage === '/contact' ? 'nav-link active' : 'nav-link'}>Contact</Link>
+            <li>
+              <Link 
+                to="/contact" 
+                className={currentPage === '/contact' ? 'dropdown-item active' : 'dropdown-item'} 
+                onClick={closeDropdown}
+              >
+                Contact
+              </Link>
             </li>
-            <li className="nav-item">
-              <Link to="/resume" className={currentPage === '/resume' ? 'nav-link active' : 'nav-link'}>Resume</Link>
+            <li>
+              <Link 
+                to="/resume" 
+                className={currentPage === '/resume' ? 'dropdown-item active' : 'dropdown-item'} 
+                onClick={closeDropdown}
+              >
+                Resume
+              </Link>
             </li>
           </ul>
         </div>
