@@ -3,54 +3,189 @@
 
 const Resume = () => {
   return (
-    <section className='resume'>
-      <h2>Resume</h2>
-      <p><a href="/WebDevResume.pdf" download>Download My Resume</a></p>
-      
-      <h3>Profile</h3>
-      <p>
-      Full Stack Web Developer with expertise in building dynamic and responsive web applications. Recently graduated from an intensive Full-Stack Web Development Bootcamp, gaining hands-on experience in both front-end and back-end technologies. Adept at creating user-friendly interfaces and scalable solutions with a keen eye for detail and problem solving. Proven ability to collaborate effectively within teams to deliver high-quality projects on time. Continuously driven to learn and apply new technologies to enhance development efficiency and user experience.
-      </p>
+    <section className="resume">
+      <header className="resume-header">
+        <h2>Resume</h2>
+        <p className="resume-download">
+          <a href="/CybersecuityResume2026.pdf" download>
+            Download My Resume
+          </a>
+        </p>
+      </header>
 
-      <h3>Skills</h3>
-      <ul>
-        <li><strong>Front-End:</strong> HTML5, CSS3, JavaScript (ES6+), React, Redux, Responsive Design, Bootstrap</li>
-        <li><strong>Back-End:</strong> Node.js, Express.js, RESTful APIs, MongoDB, SQL</li>
-        <li><strong>Tools:</strong> Git, GitHub, Visual Studio Code, Postman</li>
-        <li><strong>Soft Skills:</strong> Problem-Solving, Team Collaboration, Time Management</li>
-      </ul>
+      <div className="resume-content">
+        <section className="resume-section">
+          <h3>Profile</h3>
+          <p>
+            Cybersecurity professional currently pursuing an Associate of Applied
+            Science in Computer Engineering Technology with a concentration in
+            Cybersecurity. Experienced in conducting security assessments,
+            identifying vulnerabilities, evaluating security controls, and
+            providing actionable recommendations to improve organizational
+            security.
+          </p>
+          <p>
+            With a background in full-stack web development and networking,
+            I bring a well-rounded technical perspective to protecting
+            systems, applications, and sensitive information. My experience
+            includes network security, access controls, vulnerability
+            assessments, and security awareness.
+          </p>
+          <p>
+            Passionate about problem-solving, continuous learning, and
+            helping organizations strengthen their security posture through
+            practical and effective cybersecurity solutions.
+          </p>
+        </section>
 
-      <h3>Experience</h3>
-      <ul className= "experience">
-        <li><strong>Solar Consultant</strong> - Top Tier Solar Solutions, Garner, NC (May 2023 - 2024)
-          <ul>
-            <li>Lead generation and qualified leads for interested homeowners, boosting client acquisition.</li>
-            <li>Engaged with potential clients to explain solar energy solutions, improving communication and sales skills.</li>
-            <li>Managed customer information and interactions, ensuring accurate and organized records.</li>
+        <section className="resume-section">
+          <h3>Skills</h3>
+          <ul className="resume-list">
+            <li>
+              <strong>Cybersecurity:</strong> Vulnerability Assessment,
+              Security Auditing, Access Controls, Password Security,
+              Security Awareness, Risk Assessment
+            </li>
+            <li>
+              <strong>Networking:</strong> IPv6, EIGRP, BGP, VLANs,
+              VPNs, NAT, LAN, WAN, Wireless Network Installation,
+              Network Data Backup, Network Activity Logging
+            </li>
+            <li>
+              <strong>Front-End Development:</strong> HTML5, CSS3,
+              JavaScript (ES6+), React, Redux, Responsive Design,
+              Bootstrap
+            </li>
+            <li>
+              <strong>Back-End Development:</strong> Node.js,
+              Express.js, RESTful APIs, MongoDB, SQL
+            </li>
+            <li>
+              <strong>Development Tools:</strong> Git, GitHub,
+              Visual Studio Code, Postman
+            </li>
+            <li>
+              <strong>Professional Skills:</strong> Project Management,
+              Data Analysis, Report Evaluation, Problem-Solving,
+              Team Collaboration, Training and Mentorship
+            </li>
           </ul>
-        </li>
-        <li><strong>Baker</strong> - Harris Teeter, Carthage, NC (June 2021 - May 2023)
-          <ul>
-            <li>Managed inventory and ordered supplies, ensuring the bakery was well-stocked.</li>
-            <li>Prepared baked goods for the sales floor, maintaining high quality and consistency.</li>
-            <li>Collaborated with team members to meet customer demands efficiently.</li>
-          </ul>
-        </li>
-        <li><strong>Server</strong> - Bonefish Grill, Southern Pines, NC (2019 - July 2020)
-          <ul>
-            <li>Provided exceptional customer service, addressing dietary needs and ensuring a positive dining experience.</li>
-            <li>Managed multiple tables and orders simultaneously, ensuring timely service.</li>
-            <li>Handled customer complaints constructively, improving overall satisfaction.</li>
-          </ul>
-        </li>
-      </ul>
+        </section>
 
-      <h3>Education</h3>
-      <ul>
-        <li><strong>Full-Stack Web Development Certificate</strong> - UNC-Chapel Hill</li>
-        <li><strong>Team Leadership Certificate</strong> - Sandhills Community College</li>
-        <li><strong>GED</strong> - Sandhills Community College</li>
-      </ul>
+        <section className="resume-section">
+          <h3>Experience</h3>
+          <ul className="resume-list experience">
+            <li>
+              <strong>CyberSafe Communities Analyst</strong> -
+              CyberSafe Communities, Pinehurst, NC
+              (August 2026 - Present)
+              <ul>
+                <li>
+                  Conduct cybersecurity assessments for local businesses
+                  and organizations to identify security risks and
+                  vulnerabilities.
+                </li>
+                <li>
+                  Analyze existing security practices and provide
+                  actionable recommendations to strengthen overall
+                  cybersecurity posture.
+                </li>
+                <li>
+                  Evaluate network security, account security, access
+                  controls, password practices, data backups, and
+                  security awareness.
+                </li>
+                <li>
+                  Help organizations understand potential threats
+                  and implement practical security improvements.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Solar Sales Consultant</strong> -
+              Top Tier Solar Solutions, Garner, NC
+              (March 2023 - January 2025)
+              <ul>
+                <li>
+                  Negotiated and closed contracts totaling over
+                  $100,000 through direct customer engagement.
+                </li>
+                <li>
+                  Promoted to a lead sales position within 90 days
+                  based on performance and rapid skill development.
+                </li>
+                <li>
+                  Achieved a company record for the most closed
+                  deals in a single week.
+                </li>
+                <li>
+                  Trained and mentored new employees on sales
+                  strategies, customer communication, and
+                  canvassing techniques.
+                </li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Lead Baker</strong> -
+              Harris Teeter, Carthage, NC
+              (April 2021 - March 2023)
+              <ul>
+                <li>
+                  Led daily bakery operations, coordinating
+                  production, inventory, and sales demands.
+                </li>
+                <li>
+                  Identified inefficiencies in inventory management
+                  and implemented a more effective system.
+                </li>
+                <li>
+                  Reduced average product waste from 8% to 2%
+                  through process improvements.
+                </li>
+                <li>
+                  Coordinated team responsibilities to maintain
+                  production quality and operational efficiency.
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+
+        <section className="resume-section">
+          <h3>Education</h3>
+          <ul className="resume-list">
+            <li>
+              <strong>
+                Associate of Applied Science -
+                Computer Engineering Technology,
+                Cybersecurity Concentration
+              </strong>
+              <ul>
+                <li>Sandhills Community College</li>
+                <li>Expected Graduation: May 2027</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>Full-Stack Web Development Certificate</strong>
+              <ul>
+                <li>University of North Carolina at Chapel Hill</li>
+                <li>Completed: August 2024</li>
+              </ul>
+            </li>
+
+            <li>
+              <strong>General Education Diploma (GED)</strong>
+              <ul>
+                <li>Sandhills Community College</li>
+                <li>Completed: August 2013</li>
+              </ul>
+            </li>
+          </ul>
+        </section>
+      </div>
     </section>
   );
 };
