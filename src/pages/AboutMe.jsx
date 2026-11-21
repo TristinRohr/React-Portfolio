@@ -8,8 +8,8 @@ const AboutMe = () => {
     <section className='aboutMe'>
       <h2>About Me</h2>
       <img src={profileImage} alt="Tristin Rohr" />
-      <p>Tristin Rohr - Full-Stack Web Developer</p>
-      <p>I am an aspiring Full-Stack Web Developer with a passion for creating dynamic and responsive web applications. Recently completed a comprehensive Full-Stack Web Development Bootcamp at UNC-Chapel Hill, I am honing my skills in both front-end and back-end technologies. My background in various industries, from solar consulting to retail and food service, has equipped me with strong problem-solving abilities, excellent communication skills, and a commitment to teamwork. I am eager to apply my knowledge and creativity to contribute to a dynamic development team. Let’s connect and build something great together!</p>
+      <p>Tristin Rohr - Cybersecurity Professional</p>
+      <p>I am a cybersecurity professional pursuing an Associate of Applied Science in Computer Engineering Technology with a concentration in cybersecurity. I have experience conducting security assessments, identifying vulnerabilities, evaluating security controls, and providing practical recommendations to strengthen organizational security. My background in full-stack web development and networking gives me a broader understanding of systems, applications, and network infrastructure. I am passionate about problem-solving, continuous learning, and helping organizations protect sensitive information through effective security solutions.</p>
     </section>
   );
 };
