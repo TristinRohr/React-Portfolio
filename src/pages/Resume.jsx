@@ -7,7 +7,7 @@ const Resume = () => {
       <header className="resume-header">
         <h2>Resume</h2>
         <p className="resume-download">
-          <a href="/CybersecuityResume2026.pdf" download>
+          <a href={`${import.meta.env.BASE_URL}CybersecuityResume2026.pdf`} download>
             Download My Resume
           </a>
         </p>
